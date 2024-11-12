@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Login page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[<br>Login successful]]>
+    </line>
+    <line>
+      <![CDATA[Login page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[<br>Login successful]]>
+    </line>
+    <line>
+      <![CDATA[Login page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[<br>Login successful]]>
+    </line>
+    <line>
+      <![CDATA[Login page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[<br>Error message is Epic sadface: Username and password do not match any user in this service]]>
+    </line>
+    <line>
+      <![CDATA[Login page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[<br>Error message is Epic sadface: Username and password do not match any user in this service]]>
+    </line>
+    <line>
+      <![CDATA[Login page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[<br>Error message is Epic sadface: Password is required]]>
+    </line>
+    <line>
+      <![CDATA[Login page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[<br>Error message is Epic sadface: Username is required]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-11-12T16:37:10 IST" name="Default suite" finished-at="2024-11-12T16:37:49 IST" duration-ms="38749">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test.TestRunner1@74e28667]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-11-12T16:37:10 IST" name="Default test" finished-at="2024-11-12T16:37:49 IST" duration-ms="38749">
+      <class name="test.TestRunner1">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:test.TestRunner1@74e28667]" started-at="2024-11-12T16:37:10 IST" name="setUpClass" finished-at="2024-11-12T16:37:12 IST" duration-ms="2023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@76a1146d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test.TestRunner1@74e28667]" started-at="2024-11-12T16:37:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-12T16:37:18 IST" duration-ms="5893" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid username and valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[<br>Login successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test.TestRunner1@74e28667]" started-at="2024-11-12T16:37:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-12T16:37:23 IST" duration-ms="4493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid username and valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[<br>Login successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test.TestRunner1@74e28667]" started-at="2024-11-12T16:37:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-12T16:37:32 IST" duration-ms="8980" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid username and valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[<br>Login successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test.TestRunner1@74e28667]" started-at="2024-11-12T16:37:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-12T16:37:36 IST" duration-ms="3960" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with invalid username and valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[<br>Error message is Epic sadface: Username and password do not match any user in this service]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test.TestRunner1@74e28667]" started-at="2024-11-12T16:37:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-12T16:37:40 IST" duration-ms="4031" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid username and invalid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[<br>Error message is Epic sadface: Username and password do not match any user in this service]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test.TestRunner1@74e28667]" started-at="2024-11-12T16:37:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-12T16:37:44 IST" duration-ms="4323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid username and blank password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[<br>Error message is Epic sadface: Password is required]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:test.TestRunner1@74e28667]" started-at="2024-11-12T16:37:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-12T16:37:48 IST" duration-ms="4266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with blank username and valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[<br>Error message is Epic sadface: Username is required]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:test.TestRunner1@74e28667]" started-at="2024-11-12T16:37:48 IST" name="tearDownClass" finished-at="2024-11-12T16:37:49 IST" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- test.TestRunner1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
