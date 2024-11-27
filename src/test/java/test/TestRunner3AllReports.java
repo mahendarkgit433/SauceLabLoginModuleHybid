@@ -1,5 +1,7 @@
 package test;
 
+import org.testng.annotations.DataProvider;
+
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
@@ -15,6 +17,12 @@ import io.cucumber.testng.CucumberOptions;
 				"rerun:target/failedtestscenarios.txt"}
 )
 
-public class TestRunner1 extends AbstractTestNGCucumberTests
+public class TestRunner3AllReports extends AbstractTestNGCucumberTests
 {
+	
+	@DataProvider(parallel=true)
+	public Object[][] scenario()
+	{
+		return(super.scenarios());
+	}
 }

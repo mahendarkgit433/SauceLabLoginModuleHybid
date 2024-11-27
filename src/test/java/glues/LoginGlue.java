@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.Reporter;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -31,14 +32,12 @@ public class LoginGlue
 		wait = website.defineExplicitWait(driver,30,1000);
 		BrowserWindowUtility.browserMaximize(driver);
 		login = new LoginPage(driver, wait);
-	}
-	
+	}	
 	@When("launch site")
 	public void launch_site() throws Exception
 	{
 		website.launchSite(driver, PropertiesFileUtility.getValueFromPropertiesFile("src/test/resources/properties/config.properties", "url"));
-	}
-	
+	}	
 	@Then("verify login page is displayed")
 	public void verify_login_page()
 	{

@@ -30,7 +30,6 @@ public class ExcelFileUtility
 		hwb.write(fo); //save xls file
 		hwb.close();
 	}
-	
 	public void createXLSXFile(String filepath) throws Exception
 	{
 		//Create ".xlsx" file with a sheet
@@ -41,7 +40,6 @@ public class ExcelFileUtility
 		xwb.write(fo); //save xlsx file
 		xwb.close();
 	}
-	
 	public Workbook openExcelFile(String filepath) throws Exception
 	{
 		//either ".xls" or ".xlsx"
@@ -50,11 +48,11 @@ public class ExcelFileUtility
 		Workbook wb=WorkbookFactory.create(fi);
 		return(wb);
 	}
-	
 	public Sheet openSheet(Workbook wb, Object input) 
 	{
 		Sheet sht;
-        if(input instanceof Integer){
+        if(input instanceof Integer)
+        {
             int intValue = (int) input;
             sht=wb.getSheetAt(intValue);
             return(sht);
@@ -64,35 +62,33 @@ public class ExcelFileUtility
             sht=wb.getSheet(stringValue);
             return(sht);
         } 
-        else{
+        else
+        {
         	throw new NullPointerException();
         }
 	}
-	
 	public Sheet addSheet(Workbook wb, String sheetName)
 	{
 		Sheet sht=wb.createSheet(sheetName);
 		return(sht);
 	}
-	
 	public int getRowsCount(Sheet sht)
 	{
 		int nour=sht.getPhysicalNumberOfRows();
 		return(nour);
 	}
-	
 	public int getCellscount(Sheet sht, int rowindex)
 	{
 		int nouc=sht.getRow(rowindex).getLastCellNum(); 
 		return(nouc);
-	}
-	
+	}	
 	public void createResultColumn(Sheet sht, int cellindex)
 	{
 		SimpleDateFormat sf=new SimpleDateFormat("dd-MMM-yyyy-hh-mm-ss");
 		Date dt=new Date();
 		//create results column in first row by default
-		try {
+		try 
+		{
 			sht.getRow(0).createCell(cellindex).setCellValue("Test Results on "+sf.format(dt));
 		}
 		catch(Exception ex)
@@ -109,14 +105,12 @@ public class ExcelFileUtility
 		sht.getRow(0).getCell(cellindex).setCellStyle(style);
 		sht.autoSizeColumn(cellindex); //auto-fit
 	}
-	
 	public String getCellValue(Sheet sht, int rowindex, int cellindex)
 	{
 		DataFormatter df=new DataFormatter(); //get any type of data in cell as String only
 		String value=df.formatCellValue(sht.getRow(rowindex).getCell(cellindex));
 		return(value);
 	}
-	
 	public void setCellValue(Sheet sht, int rowindex, int cellindex, String value) throws Exception
 	{
 		try
@@ -132,7 +126,6 @@ public class ExcelFileUtility
 			sht.autoSizeColumn(cellindex); 
 		}
 	}
-	
 	public void setCellValue(Sheet sht, int rowindex, int cellindex, String value, int fontSize,
 	  String fontName, boolean bold, boolean italic, short fontColor, short bgColor, String align)
 	{
@@ -160,7 +153,6 @@ public class ExcelFileUtility
 		sht.getRow(rowindex).getCell(cellindex).setCellStyle(style);
 		sht.autoSizeColumn(cellindex);
 	}
-	
 	public void saveAndCloseExcel(Workbook wb, String filepath) throws Exception
 	{
 		FileOutputStream fo=new FileOutputStream(filepath);

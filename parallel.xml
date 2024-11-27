@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite for parallel exceution" parallel="tests" thread-count="4">
+    <test name="Test1">
+        <classes>
+            <class name="test.TestRunner1ParallelScenarios"/>
+        </classes>
+    </test>
+    <test name="Test2">
+        <classes>
+            <class name="test.TestRunner2ExtentReports"/>
+        </classes>
+    </test>
+    <test name="Test3">
+        <classes>
+            <class name="test.TestRunner3AllReports"/>
+        </classes>
+    </test>
+    <test name="Test4">
+        <classes>
+            <class name="test.TestRunner4AllureReports"/>
+        </classes>
+    </test>
+</suite>
